@@ -105,13 +105,12 @@ mensaje
 // OPERADORES LOGICOS && - || - Not !
 let condicion1 = true;
 let condicion2 = false;
+let condicion3 = false
 
-let resultadoY = condicion1 && condicion2; 
-let resultadoO = condicion1 || condicion2;
-let resultadoNot = !condicion1; 
-resultadoY
-resultadoO
-resultadoNot
+let Y = condicion1 && condicion2; 
+let O = condicion1 || condicion2;
+let Not = !condicion1; 
+
 
 // EXPRESIONES Y SENTENCIAS
 let suma = 5 + 3; // -> Expresión (produce un valor)
@@ -150,6 +149,11 @@ let textNum ="10";
 console.log(textNum);
 console.log("El tipo de dato num es: " + typeof textNum);
 let text = "esto es un texto"
+
+
+// PROMPT
+const diaDeHoy = prompt("Por favor, ingresa que dia es hoy:");
+console.log(diaDeHoy);
 
 // EJEMPLO INSPECCIONAR - entorno en JS - mostrar alert
 alert("Bienvenido a JavaScript");
