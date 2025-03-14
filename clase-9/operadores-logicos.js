@@ -1,33 +1,30 @@
-// que devuelve
-console.log(true && false);
-console.log(false || true);
-console.log(!false);
-console.log(true && 'Hola');
-console.log(false || 'Chau');
+// Atajos con operadores logicos o (short-circuit evaluation - cortocircuito logico)
+// Permiten que las expresiones logicas se evaluen de manera mas eficiente
+// Nos ayudan a escribir un codigo mas corto y facil de leer
 
 // cortocircuito logico
 // ➡️ Objetivo: Mostrar cómo || devuelve el primer valor verdadero.
 let nombre = '';
-let saludo = nombre || 'Desconocido';
+let saludo = nombre || 'poli';
 console.log('Hola ' + saludo);
 
 // verificar condiciones
 // ➡️ Cambiar los valores de edad y tieneEntrada para ver cómo cambia el resultado.
 let edad = 16;
 let tieneEntrada = true;
-
+let puedeEntrar = edad >= 18 && tieneEntrada;
 
 console.log('¿Puede entrar?', puedeEntrar);
 
 // ¿Qué se muestra en consola? (¡Hace pensar por coerción y lógicos!)
-// ➡️ Objetivo: Introducir el ?? para nullish coalescing, sin profundizar tanto.
 console.log(0 || 'Hola');
 console.log(null && 'Chau');
 console.log('' || 'Vacio');
 
-console.log(undefined ?? 'Valor por defecto'); // ❇️
+// ➡️ ?? (nullish coalescing)
+console.log(undefined ?? 'Valor por defecto'); // ❇️ EXTRA
 
-// DEFINICION Y MAS EJEMPLOS DEL ?? *NULLISH COALESCING
+// DEFINICION  -> ?? NULLISH COALESCING
 // Es un operador lógico que se usa para dar un valor por defecto cuando una variable es:
 
 // null
@@ -55,17 +52,13 @@ let edadFinalBis = edadCon0 ?? 18;
 console.log(edadFinalBis); // 0 ✅
 
 // ?? pregunta si es null o undefined como 0 no es ninguno de esos lo devuelve como valido
-// porque no lo devuelve como false? porque ?? no se fija si es true o false
+// porque no lo devuelve como false? porque (??) no se fija si es true o false
 
 let nombreConNull = null;
-let usuario = nombreConNull ?? 'Desconocido';
-console.log(usuario); // 'Desconocido'
+let usuario = nombreConNull ?? 'Poli';
+console.log(usuario); // 'poli'
 
 let precio;
 let valorFinal = precio ?? 'No definido';
 console.log(valorFinal); // 'No definido'
 
-
-
-// Resolver una condición compuesta
-// ➡️ Objetivo: Combinar operadores lógicos con if/else.
