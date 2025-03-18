@@ -70,10 +70,11 @@ console.log(saludo());
 
 function mostrarLocal() {
   let localVar = "Soy local";
-  console.log(localVar); // Accede a la variable local
+  console.log(localVar); // Accede a la variable local - solo vive dentro de mi bloque de codigo {}
 }
+// console.log(localVar); // Error: localVar is not defined
+
 mostrarLocal(); // 'Soy local'
-// ❌console.log(localVar); // Error: localVar is not defined
 
 // Scope Global
 // La variable está disponible en todo el código
@@ -81,9 +82,11 @@ mostrarLocal(); // 'Soy local'
 let globalVar = "Soy global";
 
 function mostrarGlobal() {
-  console.log(globalVar); // Accede a la variable global
+  console.log("Consulta dentro de la funcion " + globalVar);
 }
+
 mostrarGlobal(); // 'Soy global'
+console.log("Consulta por fuera de la funcion " + globalVar); // Accede a la variable global - vive aun por fuera de mi bloque codigo {}
 
 // FUNCION FLECHA (Arrow function) - se incorpora en ECMAScript 6 (ES6)
 // una forma más corta y moderna de escribir funciones en JS
@@ -94,10 +97,11 @@ mostrarGlobal(); // 'Soy global'
 // Si la funcion tiene una sola sentencia (una sola linea) se eliminan las llaves y la palabra reservada RETURN
 const sumar = (a, b) => a + b;
 console.log(sumar(3, 5)); // 8
+sumar(14, 5); // invocamos la funcion - pero como no esta en un console.log - no vemos el resultado en la terminal
 
 // Función flecha con múltiples líneas y RETURN EXPLICITO
-const esMultiplo = (num1 , num2) => {
-let resto = num1 % num2
-return resto === 0; // si el resto es 0 - entonces es multiplo
+const esMultiplo = (num1, num2) => {
+  let resto = num1 % num2;
+  return resto === 0; // si el resto es 0 - entonces es multiplo
 };
-console.log(esMultiplo(20 , 4))
+console.log(esMultiplo(10, 3));
