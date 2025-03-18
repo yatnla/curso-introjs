@@ -11,7 +11,7 @@
 
 ## Atajos con operadores logicos
 
-## **Parte 1: Evaluá las expresiones**
+## **1. Evaluá las expresiones**
 
 Analizá cada expresión con operadores lógicos y pensá cuál sería el resultado. 
 
@@ -27,7 +27,7 @@ console.log("Hola" || false);        // ?
 console.log("Prueba" && "Éxito");    // ?
 ```
 
-## **Parte 2: Operadores lógicos combinados**
+## **2. Operadores lógicos combinados**
 
 Analizá cada caso y pensá el resultado de las siguientes expresiones que combinan los operadores && y ||. 
 
@@ -37,7 +37,7 @@ Luego, probá el código en la consola y fijate el resultado es igual a tu predi
 console.log("JS" && null || "Aprendiendo"); 
 console.log(0 && "Empezando" || 5 && "Terminando");
 ```
-## **Parte 3: Validar formulario con operadores lógicos**
+## **3. Validar formulario con operadores lógicos**
 
 Imaginemos que tenemos un formulario. 
 
