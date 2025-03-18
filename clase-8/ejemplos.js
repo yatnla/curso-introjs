@@ -143,3 +143,15 @@ let text = "esto es un texto";
 const prompt = require("prompt-sync")();
 const diaDeHoy = prompt("Por favor, ingresa que dia es hoy:");
 console.log("Hoy es" + " " + diaDeHoy);
+
+// CONDICIONALES
+// Mayor de edad
+// if/else para verificar si es mayor de edad (18 o más).
+
+let edadUsuario = parseInt(prompt('¿Cuál es tu edad?'));
+if (edad >= 18) {
+  console.log('Sos mayor de edad');
+} else {
+  console.log('Sos menor de edad');
+}
+console.log(edadUsuario)

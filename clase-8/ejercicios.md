@@ -19,6 +19,8 @@ Mostrá ambos valores usando console.log().
 
 Declara las variables - num1 - num2 - resultado.
 
+Realiza los calculos utilizando las variables (num1 y num2)
+
 Mostra el resultado usando console.log()
 
 ---
@@ -59,5 +61,27 @@ Si la nota es mayor o igual a 6
 Mostrar "Aprobado"
 
 Sino mostrar "Desaprobado"
+
+---
+
+**7. PAR E IMPAR**
+Declara una variable con un numero y usa el operador (%) para saber si es par o impar.
+
+Mostrá ambos resultados con console.log() - "el numero es par" o "el numero es impar"
+
+Realiza el mismo ejercicio pero solicitando un número al usuario y mostra también el resultado.
+
+---
+
+**8. CALCULADORA INTERACTIVA**
+
+Pedile al usuario dos números y que elija una operación aritmética (suma, resta, multiplicación, división), utilizando prompt(). 
+
+Según la operación elegida, realizá el cálculo y mostrá el resultado con console.log().
+
+
+
+
+
 
 
