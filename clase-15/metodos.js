@@ -2,11 +2,11 @@
 
 // push() (Agrega un elemento al final del array)
 let apellidos = ["Gonzalez", "Diaz"];
-frutas.push("Perez"); 
+apellidos.push("Perez"); 
 console.log(apellidos); // ["Gonzalez", "Diaz", "Perez"]
 
 let num = [1, 2, 3];
-numeros.push(4);
+num.push(4);
 console.log(num); // [1, 2, 3, 4]
 
 // pop() (Elimina el último elemento del array)
@@ -15,17 +15,16 @@ colores.pop();
 console.log(colores); // ["Rojo", "Verde"]
 
 let abc = ["a", "b", "c"];
-letras.pop();
+abc.pop();
 console.log(abc); // ["a", "b"]
 
 // shift() (Elimina el primer elemento del array)
 let animales = ["Perro", "Gato", "Conejo"];
 animales.shift();
 console.log(animales); // ["Gato", "Conejo"]
-javascript
 
 let otrosNum = [10, 20, 30];
-numeros.shift();
+otrosNum.shift();
 console.log(otrosNum); // [20, 30]
 
 // unshift() (Agrega un elemento al inicio del array)
@@ -34,8 +33,8 @@ dias.unshift("Lunes");
 console.log(dias); // ["Lunes", "Martes", "Miércoles"]
 
 let masNum = [2, 3, 4];
-numeros.unshift(1);
-console.log(masNum); // [1, 2, 3, 4]
+masNum.unshift(5);
+console.log(masNum); // [5, 2, 3, 4]
 
 //join() (Convierte un array en un string)
 let palabras = ["Hola", "Mundo"];
@@ -43,7 +42,7 @@ let oracion = palabras.join(" ");
 console.log(oracion); // "Hola Mundo"
 
 let otrosNumeros = [1, 2, 3];
-console.log(otrosNumeros.join("-")); // "1-2-3"
+console.log(otrosNumeros.join(",")); // "1,2,3"
 
 // indexOf() (Busca la posición de un elemento)
 let nombres = ["Ana", "Carlos", "Pedro"];
@@ -54,8 +53,9 @@ console.log(frutas.indexOf("Uva")); // 2
 
 // lastIndexOf() (Última aparición de un elemento)
 let masNumeros = [1, 2, 3, 1, 4];
-console.log(masNumeros.lastIndexOf(1)); // 3
+console.log(masNumeros.lastIndexOf(3)); // 2
 
+// si el parametro de busqueda esta repetido, buscando de atras hacia adelante me va a devolver la posicion del primero que encuentre
 let letras = ["a", "b", "c", "a"];
 console.log(letras.lastIndexOf("a")); // 3
 
@@ -69,24 +69,24 @@ console.log(numeros.includes(20)); // false
 // PROPIEDADES DE STRING
 // Son características del string que nos dan información sobre él.
 
-// length (Devuelve la cantidad de caracteres)
+// length (Devuelve la cantidad de caracteres) / la longitud que tenga la palabra o la cadena de texto
 let palabra = "Hola";
 console.log(palabra.length); // 4
 
-let cantidadLetras = "Javascript";
-console.log(cantidadLetras.length); // 10
+let cantidadLetras = "Hola Javascript";
+console.log(cantidadLetras.length); // 15
 
 // indexOf() (Encuentra la posición de un caracter o palabra)
 let posicion = "Hola Mundo";
 console.log(posicion.indexOf("Mundo")); // 5
 
 let posicionPalabra = "Programar es divertido";
-console.log(posicionPalabra.indexOf("divertido")); // 12
+console.log(posicionPalabra.indexOf("divertido")); // 13
 
 // METODOS DE STRING
 // Son funciones asociadas a los strings que nos permiten manipularlos.
 
-// slice() (Extrae una parte de un string)
+// slice() (Extrae o corta una parte de un string)
 let saludo = "Hola Mundo";
 console.log(saludo.slice(0, 4)); // "Hola"
 
@@ -113,3 +113,6 @@ console.log(lista.split(",")); // ["manzana", "pera", "banana"]
 
 let frase = "Hola mundo, cómo estás";
 console.log(frase.split(" ")); // ["Hola", "mundo,", "cómo", "estás"]
+
+let pruebaSplit = "123-657-10234-234456"
+console.log(pruebaSplit.split("4"))
